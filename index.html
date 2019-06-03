@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div>
+		<h1>ОЧКИ</h1>
+		<h2 class="score">100</h2>
+	</div>
+	<div>
+		<div class="row">
+			<div style="background-image: url(korova.jpg); background-size: 100% 100% ; position: absolute; margin-left: 100px; margin-top: 220px; height: 200px; width: 300px;" class="img1"></div>
+			<div style="background:black; position: absolute; margin-left: 100px; margin-top: 220px; height: 200px; width: 300px; display: none;" class="img11"></div> 
+
+			<div style="background-image: url(nosorog.jpg); background-size: 100% 100%; position: absolute; margin-top: 400px; margin-left: 800px; height: 200px; width: 300px; " class="img2"></div>
+			<div style="background: black; position: absolute; margin-top: 400px; margin-left: 800px; height: 200px; width: 300px; display: none; " class="img22"></div>
+
+			<div style="background-image: url(begemot.jpg); background-size: 100% 100%; position: absolute; margin-top: 400px; margin-left: 450px; height: 200px; width: 300px; " class="img3"></div>
+			<div style="background:black; position: absolute; margin-top: 400px; margin-left: 450px; height: 200px; width: 300px;display: none; " class="img33"></div>
+
+			<div style="background-image: url(Antilop.jpg); background-size: 100% 100%; position: absolute; margin-top: 430px ; margin-left: 50px; height: 200px; width: 300px;" class="img4"></div>
+			<div style="background:black; position: absolute; margin-top: 430px ; margin-left: 50px; height: 200px; width: 300px;display: none;" class="img44"></div>
+
+			<div style="background-image: url(giena.jpg); background-size: 100% 100%; position: absolute;  margin-left: 50px; height: 200px; width: 300px; " class="img5"></div>
+			<div style="background:black;display: none; position: absolute;  margin-left: 50px; height: 200px; width: 300px; " class="img55"></div>
+
+			<div style="background-image: url(jiraf.jpg); background-size: 100% 100%; position: absolute; margin-top: 0px; margin-left: 450px; height: 200px; width: 300px; " class="img6"></div>
+			<div style="background:black;display: none; position: absolute; margin-top: 0px; margin-left: 450px; height: 200px; width: 300px; " class="img66"></div>
+
+			<div style="background-image: url(lion.jpg); background-size: 100% 100%; position: absolute; margin-top: 400px; ;  margin-left: 1200px; height: 200px; width: 300px;" class="img7"></div>
+			<div style="background:black; display: none; position: absolute; margin-top: 400px; ;  margin-left: 1200px; height: 200px; width: 300px;" class="img77"></div>
+
+			<div style="background-image: url(zebra.jpg); background-size: 100% 100%; position: absolute; margin-top: 100px; margin-left: 1140px; height: 200px; width: 300px;" class="img8"></div>
+			<div style="background:black; display: none; position: absolute; margin-top: 100px; margin-left: 1140px; height: 200px; width: 300px;" class="img88"></div>
+
+			<div style="background-image: url(elephant.jpg); background-size: 100% 100%; position: absolute; margin-top: 0px; margin-left: 800px; height: 200px; width: 300px;" class="img9"></div>
+			<div style="background:black;display: none; position: absolute; margin-top: 0px; margin-left: 800px; height: 200px; width: 300px;" class="img99"></div>
+
+			<div style="margin-left: 600px; margin-top: 270px; display: none;" class="zdnie">
+				<h1>Найдите зебру</h1>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let ball = 100;
+
+		let black = function(){
+			document.querySelector(".img1").style.display = "none";
+			document.querySelector(".img11").style.display = "block"
+			document.querySelector(".img11").onclick = function(){
+				document.querySelector(".img1").style.display = "block";
+				document.querySelector(".img11").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+			
+
+			document.querySelector(".img2").style.display = "none";
+			document.querySelector(".img22").style.display = "block"
+			document.querySelector(".img22").onclick = function(){
+				document.querySelector(".img2").style.display = "block";
+				document.querySelector(".img22").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+
+			document.querySelector(".img3").style.display = "none";
+			document.querySelector(".img33").style.display = "block"
+			document.querySelector(".img33").onclick = function(){
+				document.querySelector(".img3").style.display = "block";
+				document.querySelector(".img33").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+
+			document.querySelector(".img4").style.display = "none";
+			document.querySelector(".img44").style.display = "block"
+			document.querySelector(".img44").onclick = function(){
+				document.querySelector(".img4").style.display = "block";
+				document.querySelector(".img44").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+
+			document.querySelector(".img5").style.display = "none";
+			document.querySelector(".img55").style.display = "block"
+			document.querySelector(".img55").onclick = function(){
+				document.querySelector(".img5").style.display = "block";
+				document.querySelector(".img55").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+
+			document.querySelector(".img6").style.display = "none";
+			document.querySelector(".img66").style.display = "block"
+			document.querySelector(".img66").onclick = function(){
+				document.querySelector(".img6").style.display = "block";
+				document.querySelector(".img66").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+
+			document.querySelector(".img7").style.display = "none";
+			document.querySelector(".img77").style.display = "block"
+			document.querySelector(".img77").onclick = function(){
+				document.querySelector(".img7").style.display = "block";
+				document.querySelector(".img77").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+
+			document.querySelector(".img8").style.display = "none";
+			document.querySelector(".img88").style.display = "block"
+			document.querySelector(".img88").onclick = function(){
+				document.querySelector(".img8").style.display = "block";
+				document.querySelector(".img88").style.display = "none"
+				ball = ball + 10;
+				document.querySelector(".score").innerHTML = ball
+				alert('Правильно!')
+			}
+
+			document.querySelector(".img9").style.display = "none";
+			document.querySelector(".img99").style.display = "block"
+			document.querySelector(".img99").onclick = function(){
+				document.querySelector(".img9").style.display = "block";
+				document.querySelector(".img99").style.display = "none"
+				ball = ball - 10;
+				document.querySelector(".score").innerHTML = ball
+			}
+			
+			document.querySelector(".zdnie").style.display = "block"
+		}
+
+		setTimeout(black,2000);
+
+		
+
+	</script>
+</body>
+</html>
